@@ -82,8 +82,8 @@ def process_directory(directory_path):
                 if classes:
                     all_classes.append(classes[0])  # Her resim dosyası için sadece bir sınıf
 
-                # Dosyayı sil
-                #os.remove(image_path)
+
+                os.remove(image_path)
                 print(f"{image_path} deleted.")
 
             except FileNotFoundError as e:
