@@ -4,8 +4,99 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="remove fıles">
+    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="adding models">
+      <change afterPath="$PROJECT_DIR$/data_models/17_android-open-project-analysis/base-adapter-helper-ClassDiagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/17_android-open-project-analysis/nineold-animations_uml.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/17_android-open-project-analysis/retrofit-uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/17_android-open-project-analysis/startuml.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/17_android-open-project-analysis/uml_types.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_models/18_google-api-python-client/uml_class_diagram_for_googleap_9.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/ClassDiagram-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/ClassDiagram-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/ClassDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/CollectDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/CursorDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/GraphDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/Iterator_UML_class_diagram.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/Migration_App_UML_Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/PipelineDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/RakNetUML.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/ReadDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/UML-class-diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/aop-uml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/base-adapter-helper-ClassDiagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/builder-uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/class_diagram.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/classdiagram_common.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/classdiagram_library_editor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/classdiagram_overview.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/classdiagram_project.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/coffee_maker_uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/components_design.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/design2b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/diagram-channel-buffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/diagram-wrapped-channel-buffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/inheritance_umlet_class_diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/lijunhuayc_uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/nestedUML.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/nineold-animations_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/overview-class-diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/parameterizer_class_diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/parameterizer_class_diagram_simplified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/parser-class-diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/prototype-uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/proxy-uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/retrofit-uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/startuml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/strategy-kerison-uml-android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/strategy-kerison-uml-calc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/strategy-kerison-uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/tags-class-diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/tilesUML.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml-design.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_class_diagram_for_googleap_9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_dumper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_models/uml_types.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/repo_wip.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/repo_wip.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +138,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;elifnaz-2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/elifnazduman/Desktop/E.D ÖZEL/python/uml-parser&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;data&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/elifnazduman/Desktop/E.D ÖZEL/python/uml-parser/data_models&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -60,7 +151,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_models" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_models/18_google-api-python-client" />
+      <recent name="$PROJECT_DIR$/data_models/17_android-open-project-analysis" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -81,6 +177,9 @@
       <workItem from="1721237775208" duration="645000" />
       <workItem from="1721239564398" duration="2358000" />
       <workItem from="1721376681348" duration="1489000" />
+      <workItem from="1721738234288" duration="1588000" />
+      <workItem from="1721818433761" duration="1370000" />
+      <workItem from="1721904450056" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="adding nb">
       <option name="closed" value="true" />
@@ -106,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721238238352</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding models">
+      <option name="closed" value="true" />
+      <created>1721738539917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721738539917</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +245,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding nb" />
     <MESSAGE value="remove fıles" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove fıles" />
+    <MESSAGE value="adding models" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding models" />
   </component>
 </project>
