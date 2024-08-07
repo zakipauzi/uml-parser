@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="remove fıles">
-      <change afterPath="$PROJECT_DIR$/using_GithubApi.py" afterDir="false" />
+    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="adding uml images into created folders">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/parse_model.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -31,9 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2jNqEmvt5QjE7FsuwTjQUHkFvTC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,11 +44,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.converting_files.executor": "Run",
+    "Python.converting_files_gif_to_png.executor": "Run",
+    "Python.converting_files_svg_to_png.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "elifnazduman",
-    "last_opened_file_path": "/Users/elifnazduman/Desktop/E.D ÖZEL/python/uml-parser",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "data",
+    "last_opened_file_path": "/Users/elifnazduman/Desktop/E.D ÖZEL/python/uml-parser/data_models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,7 +64,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_models" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_models/18_google-api-python-client" />
+      <recent name="$PROJECT_DIR$/data_models/17_android-open-project-analysis" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -77,6 +88,12 @@
       <option name="presentableId" value="Default" />
       <updated>1721237774135</updated>
       <workItem from="1721237775208" duration="645000" />
+      <workItem from="1721239564398" duration="2358000" />
+      <workItem from="1721376681348" duration="1489000" />
+      <workItem from="1721738234288" duration="1588000" />
+      <workItem from="1721818433761" duration="1370000" />
+      <workItem from="1721904450056" duration="1846000" />
+      <workItem from="1722440226088" duration="2830000" />
     </task>
     <task id="LOCAL-00001" summary="adding nb">
       <option name="closed" value="true" />
@@ -102,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721238238352</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding models">
+      <option name="closed" value="true" />
+      <created>1721738539917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721738539917</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +138,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="elifnaz-2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -122,6 +159,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding nb" />
     <MESSAGE value="remove fıles" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove fıles" />
+    <MESSAGE value="adding models" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding models" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/uml_parser$converting_files.coverage" NAME="converting_files Coverage Results" MODIFIED="1722441184287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonscript" />
+    <SUITE FILE_PATH="coverage/uml_parser$converting_files_svg_to_png.coverage" NAME="converting_files_svg_to_png Coverage Results" MODIFIED="1722441985268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonscript" />
+    <SUITE FILE_PATH="coverage/uml_parser$converting_files_gif_to_png.coverage" NAME="converting_files_gif_to_png Coverage Results" MODIFIED="1722441761207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonscript" />
   </component>
 </project>
