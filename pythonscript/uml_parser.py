@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 import os
 
+image_path = '/Users/elifnazduman/Desktop/E.D ÖZEL/python/uml-parser/uml.png'
 def save_list_to_txt(data, filename):
     with open(filename, mode='w') as file:
         for row in data:

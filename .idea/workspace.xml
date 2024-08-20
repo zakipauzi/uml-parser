@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="adding uml images into created folders">
-      <change afterPath="$PROJECT_DIR$/pythonscript/conv_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonscript/rectangle_parser.py" afterDir="false" />
+    <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="updating parsing code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse_model_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/parse_model_2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonscript/converting_files_gif_to_png.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonscript/converting_files_gif_to_png.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonscript/image_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonscript/image_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pythonscript/uml_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonscript/uml_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +74,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pythonscript" />
       <recent name="$PROJECT_DIR$/data_models/18_google-api-python-client" />
       <recent name="$PROJECT_DIR$/data_models/17_android-open-project-analysis" />
     </key>
@@ -100,7 +101,7 @@
       <workItem from="1721818433761" duration="1370000" />
       <workItem from="1721904450056" duration="1846000" />
       <workItem from="1722440226088" duration="2830000" />
-      <workItem from="1723801068856" duration="702000" />
+      <workItem from="1723801068856" duration="7570000" />
     </task>
     <task id="LOCAL-00001" summary="adding nb">
       <option name="closed" value="true" />
@@ -134,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721738539917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updating parsing code">
+      <option name="closed" value="true" />
+      <created>1723802024859</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723802024859</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +176,8 @@
     <MESSAGE value="adding nb" />
     <MESSAGE value="remove fıles" />
     <MESSAGE value="adding models" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding models" />
+    <MESSAGE value="updating parsing code" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating parsing code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/uml_parser$converting_files.coverage" NAME="converting_files Coverage Results" MODIFIED="1722441184287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonscript" />

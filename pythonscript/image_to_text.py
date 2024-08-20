@@ -2,7 +2,7 @@ import os
 import cv2
 import pytesseract
 
-# Tesseract binary path for Windows
+# Tesseract binary path
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
 
@@ -82,6 +82,12 @@ def process_directory(directory_path):
                 if classes:
                     all_classes.append(classes[0])  # Her resim dosyası için sadece bir sınıf
 
+                    # saving as txt file
+                    text_filename = os.path.splitext(filename)[0] + ".txt"
+                    text_path = os.path.join(directory_path, text_filename)
+                    with open(text_path, "w") as text_file:
+                        text_file.write(classes[0])
+                    print(f"Text saved to {text_path}")
 
                 os.remove(image_path)
                 print(f"{image_path} deleted.")
@@ -90,16 +96,20 @@ def process_directory(directory_path):
                 print(e)
     return all_classes
 
+#createing run_text function to run the whole code
+def run_text(directory_path):
+    if not os.path.isdir(directory_path):
+        raise FileNotFoundError(f"Directory {directory_path} not found.")
 
-directory_path = "cropped_images"
+    all_classes = process_directory(directory_path)
+    plantuml_syntax = generate_plantuml(all_classes)
+    print(plantuml_syntax)
 
-if not os.path.isdir(directory_path):
-    raise FileNotFoundError(f"Directory {directory_path} not found.")
+    output_path = os.path.join(directory_path, "output.puml")
+    with open(output_path, "w") as f:
+        f.write(plantuml_syntax)
+    print(f"PlantUML syntax saved to {output_path}")
 
-all_classes = process_directory(directory_path)
-plantuml_syntax = generate_plantuml(all_classes)
-print(plantuml_syntax)
 
-output_path = os.path.join(directory_path, "output.puml")
-with open(output_path, "w") as f:
-    f.write(plantuml_syntax)
+# call this function
+run_text("cropped_images")
