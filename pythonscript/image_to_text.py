@@ -4,8 +4,7 @@ import pytesseract
 
 # Tesseract binary path
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
-
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\biadge\OneDrive - BP\Documents\pytesseract.exe'
 
 def preprocess_image(image_path):
     image = cv2.imread(image_path)
