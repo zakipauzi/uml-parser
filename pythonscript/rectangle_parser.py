@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 import os
 
+
 def save_list_to_txt(data, filename):
     with open(filename, mode='w') as file:
         for row in data:
@@ -35,6 +36,7 @@ def find_squares(img):
                     if max_cos < 0.1:
                         squares.append(cnt)
     return squares
+
 
 def merge_rectangles(squares, proximity_threshold=10, epsilon=1e-6):
     def are_rectangles_close(rect1, rect2, threshold):
@@ -77,6 +79,7 @@ def merge_rectangles(squares, proximity_threshold=10, epsilon=1e-6):
 
     return merged
 
+
 def draw_rectangles(image_path, rectangles):
     image = cv2.imread(image_path)
     image_height, image_width = image.shape[:2]
@@ -115,6 +118,7 @@ def is_point_inside_rect(point, rect):
     x_max, y_max = np.max(rect, axis=0)
     return x_min <= x <= x_max and y_min <= y <= y_max
 
+
 def count_rectangles_inside(outer_rect, all_rectangles):
     count = 0
     for inner_rect in all_rectangles:
@@ -123,6 +127,7 @@ def count_rectangles_inside(outer_rect, all_rectangles):
         if all(is_point_inside_rect(point, outer_rect) for point in inner_rect):
             count += 1
     return count
+
 
 def remove_outer_rectangles_with_multiple_inner(rectangles):
     to_remove = set()
@@ -136,14 +141,10 @@ def remove_outer_rectangles_with_multiple_inner(rectangles):
     filtered_rectangles = [rect for idx, rect in enumerate(rectangles) if idx not in to_remove]
     return filtered_rectangles
 
-def is_point_inside_rect(point, rect):
-    x, y = point
-    x_min, y_min = np.min(rect, axis=0)
-    x_max, y_max = np.max(rect, axis=0)
-    return x_min <= x <= x_max and y_min <= y <= y_max
 
 def is_rectangle_inside(inner_rect, outer_rect):
     return all(is_point_inside_rect(point, outer_rect) for point in inner_rect)
+
 
 def remove_inner_rectangles(rectangles):
     to_remove = set()
@@ -157,6 +158,7 @@ def remove_inner_rectangles(rectangles):
     filtered_rectangles = [rect for idx, rect in enumerate(rectangles) if idx not in to_remove]
     return filtered_rectangles
 
+
 def find_close_rectangles(rectangles, y_tolerance=10, x_tolerance=10):
     close_pairs = []
     for i, rect1 in enumerate(rectangles):
@@ -168,12 +170,14 @@ def find_close_rectangles(rectangles, y_tolerance=10, x_tolerance=10):
                     close_pairs.append((i, j))
     return close_pairs
 
-def merge_rectangles(rect1, rect2):
+#changed the name to avoid conflicts
+def merge_rectangles_for_merging(rect1, rect2):
     min_x = min(np.min(rect1[:, 0]), np.min(rect2[:, 0]))
     max_x = max(np.max(rect1[:, 0]), np.max(rect2[:, 0]))
     min_y = min(np.min(rect1[:, 1]), np.min(rect2[:, 1]))
     max_y = max(np.max(rect1[:, 1]), np.max(rect2[:, 1]))
     return np.array([[min_x, min_y], [max_x, min_y], [max_x, max_y], [min_x, max_y]], dtype=np.int32)
+
 
 def merge_close_rectangles2(rectangles, y_tolerance, x_tolerance=10):
     close_pairs = find_close_rectangles(rectangles, y_tolerance, x_tolerance)
@@ -182,7 +186,7 @@ def merge_close_rectangles2(rectangles, y_tolerance, x_tolerance=10):
 
     for i, j in close_pairs:
         if i not in merged_indices and j not in merged_indices:
-            merged_rect = merge_rectangles(rectangles[i], rectangles[j])
+            merged_rect = merge_rectangles_for_merging(rectangles[i], rectangles[j])
             merged_rectangles.append(merged_rect)
             merged_indices.add(i)
             merged_indices.add(j)
@@ -193,27 +197,21 @@ def merge_close_rectangles2(rectangles, y_tolerance, x_tolerance=10):
 
     return merged_rectangles
 
-
-def run_parsing(image_path, y_tolerance=15):
-
-    rectangles = find_squares(cv2.imread(image_path))
-
-    merged_rectangles = merge_rectangles(rectangles)
-    return merged_rectangles
-
+#created run_parser method to call from notebook
+def run_parser(image_path, y_tolerance=15):
+    rectangles = find_squares(cv2.imread(image_path)) #Detect squares
+    merged_rectangles = merge_rectangles(rectangles) #merge rect
     filtered_rectangles = remove_outer_rectangles_with_multiple_inner(merged_rectangles)
+    filtered_rectangles = remove_inner_rectangles(filtered_rectangles)
+    last_rect = merge_close_rectangles2(filtered_rectangles, y_tolerance)
 
-    f2iltered_rectangles = remove_inner_rectangles(filtered_rectangles)
-
-    last_rect=merge_close_rectangles2(f2iltered_rectangles,y_tolerance)
-
-    print(filtered_rectangles)
     print("merged:", len(merged_rectangles))
     print("filtered:", len(filtered_rectangles))
-    print("filtered2:", len(f2iltered_rectangles))
     print("last_rect:", len(last_rect))
 
     for rect in filtered_rectangles:
         print(rect)
 
-    return draw_rectangles(image_path, last_rect)
+    draw_rectangles(image_path, last_rect)
+
+
