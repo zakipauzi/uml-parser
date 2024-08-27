@@ -68,7 +68,7 @@ def generate_plantuml(classes):
     plantuml_syntax += "@enduml"
     return plantuml_syntax
 
-
+# output dir has to be the folder name of the project {folder_id}/""
 def process_directory(input_dir, output_dir):
     os.makedirs(output_dir, exist_ok=True)  # Ensure output directory exists
 
