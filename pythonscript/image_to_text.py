@@ -101,7 +101,7 @@ def run_text(input_base_dir, output_base_dir):
     if not os.path.isdir(input_base_dir):
         raise FileNotFoundError(f"Input directory {input_base_dir} not found.")
 
-    os.makedirs(output_base_dir, exist_ok=True)  # Create the base output directory
+    os.makedirs(output_base_dir, exist_ok=True)  # Creating the base output directory
 
     for folder in os.listdir(input_base_dir):
         input_dir = os.path.join(input_base_dir, folder)
