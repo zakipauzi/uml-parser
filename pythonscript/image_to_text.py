@@ -3,8 +3,8 @@ import cv2
 import pytesseract
 
 # Tesseract binary path
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\biadge\OneDrive - BP\Documents\pytesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
+
 
 def preprocess_image(image_path):
     image = cv2.imread(image_path)
@@ -69,46 +69,54 @@ def generate_plantuml(classes):
     return plantuml_syntax
 
 
-def process_directory(directory_path):
+def process_directory(input_dir, output_dir):
+    os.makedirs(output_dir, exist_ok=True)  # Ensure output directory exists
+
     all_classes = []
-    for filename in os.listdir(directory_path):
-        image_path = os.path.join(directory_path, filename)
+    for filename in os.listdir(input_dir):
+        image_path = os.path.join(input_dir, filename)
         if os.path.isfile(image_path) and image_path.lower().endswith(('.png', '.jpg', '.jpeg')):
             try:
                 edged, image = preprocess_image(image_path)
                 rectangles = detect_rectangles(edged)
                 classes = extract_text_from_rectangles(rectangles, image)
+
                 if classes:
                     all_classes.append(classes[0])  # Her resim dosyası için sadece bir sınıf
 
-                    # saving as txt file
+                    # Save text to the output directory
                     text_filename = os.path.splitext(filename)[0] + ".txt"
-                    text_path = os.path.join(directory_path, text_filename)
+                    text_path = os.path.join(output_dir, text_filename)
                     with open(text_path, "w") as text_file:
                         text_file.write(classes[0])
                     print(f"Text saved to {text_path}")
 
-                os.remove(image_path)
-                print(f"{image_path} deleted.")
-
             except FileNotFoundError as e:
                 print(e)
+
     return all_classes
 
-#createing run_text function to run the whole code
-def run_text(directory_path):
-    if not os.path.isdir(directory_path):
-        raise FileNotFoundError(f"Directory {directory_path} not found.")
 
-    all_classes = process_directory(directory_path)
-    plantuml_syntax = generate_plantuml(all_classes)
-    print(plantuml_syntax)
+def run_text(input_base_dir, output_base_dir):
+    if not os.path.isdir(input_base_dir):
+        raise FileNotFoundError(f"Input directory {input_base_dir} not found.")
 
-    output_path = os.path.join(directory_path, "output.puml")
-    with open(output_path, "w") as f:
-        f.write(plantuml_syntax)
-    print(f"PlantUML syntax saved to {output_path}")
+    os.makedirs(output_base_dir, exist_ok=True)  # Creating the base output directory
+
+    for folder in os.listdir(input_base_dir):
+        input_dir = os.path.join(input_base_dir, folder)
+        if os.path.isdir(input_dir):
+            output_dir = os.path.join(output_base_dir, folder, "output")  # Output directory structure
+            os.makedirs(output_dir, exist_ok=True)
+
+            all_classes = process_directory(input_dir, output_dir)
+            plantuml_syntax = generate_plantuml(all_classes)
+
+            # Save the PlantUML syntax to the output directory
+            output_path = os.path.join(output_dir, "output.puml")
+            with open(output_path, "w") as f:
+                f.write(plantuml_syntax)
+            print(f"PlantUML syntax saved to {output_path}")
 
 
-# call this function
-run_text("cropped_images")
+
