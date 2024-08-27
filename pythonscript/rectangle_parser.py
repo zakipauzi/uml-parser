@@ -80,11 +80,11 @@ def merge_rectangles(squares, proximity_threshold=10, epsilon=1e-6):
     return merged
 
 
-def draw_rectangles(image_path, rectangles):
+def draw_rectangles(image_path, rectangles, output_dir):
     image = cv2.imread(image_path)
     image_height, image_width = image.shape[:2]
 
-    cropped_dir = "cropped_images"
+    cropped_dir = os.path.join(output_dir, "cropped_images")
     os.makedirs(cropped_dir, exist_ok=True)
 
     for i, rect in enumerate(rectangles):
@@ -170,7 +170,7 @@ def find_close_rectangles(rectangles, y_tolerance=10, x_tolerance=10):
                     close_pairs.append((i, j))
     return close_pairs
 
-#changed the name to avoid conflicts
+
 def merge_rectangles_for_merging(rect1, rect2):
     min_x = min(np.min(rect1[:, 0]), np.min(rect2[:, 0]))
     max_x = max(np.max(rect1[:, 0]), np.max(rect2[:, 0]))
@@ -197,10 +197,10 @@ def merge_close_rectangles2(rectangles, y_tolerance, x_tolerance=10):
 
     return merged_rectangles
 
-#created run_parser method to call from notebook
-def run_parser(image_path, y_tolerance=15):
-    rectangles = find_squares(cv2.imread(image_path)) #Detect squares
-    merged_rectangles = merge_rectangles(rectangles) #merge rect
+
+def run_parser(image_path, output_dir, y_tolerance=15):
+    rectangles = find_squares(cv2.imread(image_path))  # Detect squares
+    merged_rectangles = merge_rectangles(rectangles)  # Merge rectangles
     filtered_rectangles = remove_outer_rectangles_with_multiple_inner(merged_rectangles)
     filtered_rectangles = remove_inner_rectangles(filtered_rectangles)
     last_rect = merge_close_rectangles2(filtered_rectangles, y_tolerance)
@@ -212,6 +212,6 @@ def run_parser(image_path, y_tolerance=15):
     for rect in filtered_rectangles:
         print(rect)
 
-    draw_rectangles(image_path, last_rect)
+    draw_rectangles(image_path, last_rect, output_dir)
 
 
