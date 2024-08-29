@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5649a10f-8218-4ef1-807c-a6fd05d7745a" name="Changes" comment="updating script to create folder hierarchy">
-      <change beforePath="$PROJECT_DIR$/output/cropped_images/cropped_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cropped_images/cropped_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cropped_images/cropped_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cropped_images/cropped_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cropped_images/cropped_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/text/cropped_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/text/cropped_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/text/cropped_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/text/cropped_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cropped_images/17/cropped_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/cropped_images/17/base-adapter-helper/cropped_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cropped_images/17/cropped_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/cropped_images/17/base-adapter-helper/cropped_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cropped_images/17/cropped_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/cropped_images/17/base-adapter-helper/cropped_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cropped_images/17/cropped_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/cropped_images/17/base-adapter-helper/cropped_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cropped_images/17/cropped_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/cropped_images/17/base-adapter-helper/cropped_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/text/17/cropped_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/text/17/base-adapter-helper/cropped_0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/text/17/cropped_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/text/17/base-adapter-helper/cropped_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/text/17/cropped_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/text/17/base-adapter-helper/cropped_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/text/17/cropped_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/text/17/base-adapter-helper/cropped_3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse_model_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/parse_model_2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/output/cropped_images/cropped_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/output/cropped_images/cropped_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/output/cropped_images/cropped_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/output/cropped_images/cropped_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/output/cropped_images/cropped_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/uml-parser/output/text/cropped_0/text/cropped_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/uml-parser/output/text/cropped_1/text/cropped_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/uml-parser/output/text/cropped_2/text/cropped_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/uml-parser/output/text/cropped_3/text/cropped_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-parser/uml-parser/output/text/output.puml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +83,10 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -80,9 +95,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pythonscript" />
-      <recent name="$PROJECT_DIR$/data_models/18_google-api-python-client" />
-      <recent name="$PROJECT_DIR$/data_models/17_android-open-project-analysis" />
+      <recent name="$PROJECT_DIR$/output/cropped_images/18" />
+      <recent name="$PROJECT_DIR$/output/text/18" />
+      <recent name="$PROJECT_DIR$/output/cropped_images/18/uml_class_diagram_for_googleap_3" />
+      <recent name="$PROJECT_DIR$/output/text/18/uml_class_diagram_for_googleap_3" />
+      <recent name="$PROJECT_DIR$/output/cropped_images/17/uml_types" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -125,6 +142,12 @@
       <workItem from="1724759131930" duration="1304000" />
       <workItem from="1724760442224" duration="175000" />
       <workItem from="1724760621679" duration="232000" />
+      <workItem from="1724839272990" duration="1077000" />
+      <workItem from="1724846315145" duration="99000" />
+      <workItem from="1724846417849" duration="102000" />
+      <workItem from="1724846541974" duration="103000" />
+      <workItem from="1724846648491" duration="59000" />
+      <workItem from="1724846711563" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="adding nb">
       <option name="closed" value="true" />

@@ -1,3 +1,0 @@
-+QuickAdapter (Context context, int layoutResld)
-+4Quickadepter(Context context, int layoutResid, List<T> data)
-‘#getAdapterHelper(int position, View convertiiew, ViewGroup parent)

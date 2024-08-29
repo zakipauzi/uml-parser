@@ -1,2 +1,0 @@
-‘+convert(BaseAdaptertielper helper, Titem, boolean itemChanged)
-#convert(GaseAdapterHelper helper, T item)
